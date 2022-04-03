@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+
+<body>
+    <form action="cin.php" method="post" enctype="multipart/form-data">
+        <label for="nom">Donner votre nom:</label>
+        <input type="text" id="nom" name="nom" placeholder="Triki par exemple"> <br>
+        <label for="prénom">Donner votre prénom:</label>
+        <input type="text" id="prénom" name="prénom" placeholder="Sofiene par exemple"> <br>
+        <label for="nbreSandwich">Donner le nombre de Sandwichs:</label>
+        <input type="number" id="nbreSandwich" name="nbreSandwich" placeholder="2 par exemple"> <br>
+        <label for="adresse">Donner votre adresse:</label><br>
+        <textarea id="adresse" name="adresse" rows="9" cols="40"> </textarea><br>
+        <label for="type">Donner le type:</label>
+        <select name="type" id="type" name="type">
+            <option value="viande">Viande</option>
+            <option value="poulet">Poulet</option>
+            <option value="escalope">Escalope</option>
+        </select><br>
+        <p>Ajouter l'option que vous voulez:</p>
+        <label for="sauce">Sauce</label>
+        <input type="checkbox" value="sauce" id="sauce" name="supplementAdded[]">
+        <label for="mayo">Mayonnaise</label>
+        <input type="checkbox" value="mayo" id="mayo" name="supplementAdded[]">
+        <label for="harissa">Harissa</label>
+        <input type="checkbox" value="harissa" id="harissa" name="supplementAdded[]">
+        <br><br><label for="cin">Cin:</label>
+        <input type="file" name="image"> <br>
+        <br><br><br><button type="submit" value="envoyer">Envoyer</button>
+
+
+    </form>
+</body>
+
+</html>
